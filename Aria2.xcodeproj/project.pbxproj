@@ -8,17 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		97B5DA712A6E9CA400C34909 /* Aria2App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B5DA702A6E9CA400C34909 /* Aria2App.swift */; };
-		97B5DA732A6E9CA400C34909 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97B5DA722A6E9CA400C34909 /* ContentView.swift */; };
-		97B5DA752A6E9CA600C34909 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B5DA742A6E9CA600C34909 /* Assets.xcassets */; };
-		97B5DA782A6E9CA600C34909 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97B5DA772A6E9CA600C34909 /* Preview Assets.xcassets */; };
+		97D845E52A70DB7E004D0AA7 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D845E42A70DB7E004D0AA7 /* SettingsView.swift */; };
+		97D845E72A70F299004D0AA7 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D845E62A70F299004D0AA7 /* MainView.swift */; };
+		97D845E92A70F485004D0AA7 /* TaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D845E82A70F485004D0AA7 /* TaskView.swift */; };
+		97D845EB2A70FB1E004D0AA7 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D845EA2A70FB1E004D0AA7 /* AboutView.swift */; };
+		97D845F02A710D01004D0AA7 /* Aria2RPC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97D845EF2A710D01004D0AA7 /* Aria2RPC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		97B5DA6D2A6E9CA400C34909 /* Aria2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Aria2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		97B5DA702A6E9CA400C34909 /* Aria2App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aria2App.swift; sourceTree = "<group>"; };
-		97B5DA722A6E9CA400C34909 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		97B5DA742A6E9CA600C34909 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		97B5DA772A6E9CA600C34909 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		97D845E42A70DB7E004D0AA7 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		97D845E62A70F299004D0AA7 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		97D845E82A70F485004D0AA7 /* TaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskView.swift; sourceTree = "<group>"; };
+		97D845EA2A70FB1E004D0AA7 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		97D845EF2A710D01004D0AA7 /* Aria2RPC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aria2RPC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,7 +39,8 @@
 		97B5DA642A6E9CA400C34909 = {
 			isa = PBXGroup;
 			children = (
-				97B5DA6F2A6E9CA400C34909 /* Aria2 */,
+				97D845EE2A710C9A004D0AA7 /* Services */,
+				97B5DA6F2A6E9CA400C34909 /* Views */,
 				97B5DA6E2A6E9CA400C34909 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,23 +53,24 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		97B5DA6F2A6E9CA400C34909 /* Aria2 */ = {
+		97B5DA6F2A6E9CA400C34909 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				97B5DA702A6E9CA400C34909 /* Aria2App.swift */,
-				97B5DA722A6E9CA400C34909 /* ContentView.swift */,
-				97B5DA742A6E9CA600C34909 /* Assets.xcassets */,
-				97B5DA762A6E9CA600C34909 /* Preview Content */,
+				97D845EA2A70FB1E004D0AA7 /* AboutView.swift */,
+				97D845E82A70F485004D0AA7 /* TaskView.swift */,
+				97D845E62A70F299004D0AA7 /* MainView.swift */,
+				97D845E42A70DB7E004D0AA7 /* SettingsView.swift */,
 			);
-			path = Aria2;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		97B5DA762A6E9CA600C34909 /* Preview Content */ = {
+		97D845EE2A710C9A004D0AA7 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				97B5DA772A6E9CA600C34909 /* Preview Assets.xcassets */,
+				97D845EF2A710D01004D0AA7 /* Aria2RPC.swift */,
 			);
-			path = "Preview Content";
+			path = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +131,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B5DA782A6E9CA600C34909 /* Preview Assets.xcassets in Resources */,
-				97B5DA752A6E9CA600C34909 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +141,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97B5DA732A6E9CA400C34909 /* ContentView.swift in Sources */,
+				97D845E52A70DB7E004D0AA7 /* SettingsView.swift in Sources */,
+				97D845F02A710D01004D0AA7 /* Aria2RPC.swift in Sources */,
+				97D845E72A70F299004D0AA7 /* MainView.swift in Sources */,
+				97D845E92A70F485004D0AA7 /* TaskView.swift in Sources */,
+				97D845EB2A70FB1E004D0AA7 /* AboutView.swift in Sources */,
 				97B5DA712A6E9CA400C34909 /* Aria2App.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -271,7 +279,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Aria2/Preview Content\"";
 				DEVELOPMENT_TEAM = MSD5A9BZTN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -280,6 +287,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -300,7 +308,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Aria2/Preview Content\"";
 				DEVELOPMENT_TEAM = MSD5A9BZTN;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -309,6 +316,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
